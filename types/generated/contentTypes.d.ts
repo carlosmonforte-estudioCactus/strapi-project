@@ -479,7 +479,7 @@ export interface ApiNewsEstudioCactusNewsEstudioCactus
     draftAndPublish: true;
   };
   attributes: {
-    bodyContent: Schema.Attribute.Blocks & Schema.Attribute.Required;
+    bodyContent: Schema.Attribute.RichText & Schema.Attribute.Required;
     category: Schema.Attribute.Enumeration<['Awards', 'News']> &
       Schema.Attribute.Required;
     createdAt: Schema.Attribute.DateTime;
@@ -528,7 +528,7 @@ export interface ApiNewsEstudioCactusNewsEstudioCactus
 export interface ApiNoticiaNoticia extends Struct.CollectionTypeSchema {
   collectionName: 'noticias';
   info: {
-    displayName: 'News';
+    displayName: 'NewsStowlog';
     pluralName: 'noticias';
     singularName: 'noticia';
   };
