@@ -88,7 +88,7 @@
           "localized": true
         }
       },
-      "maxLength": 80,
+      "maxLength": 250,
       "required": true
     },
     "introductionText": {

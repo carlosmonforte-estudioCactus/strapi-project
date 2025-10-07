@@ -50,7 +50,7 @@
     },
     "subTitle": {
       "type": "string",
-      "maxLength": 80,
+      "maxLength": 250,
       "required": true
     },
     "introductionTest": {

@@ -512,7 +512,7 @@ export interface ApiNewsEstudioCactusNewsEstudioCactus
     subTitle: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.SetMinMaxLength<{
-        maxLength: 80;
+        maxLength: 250;
       }>;
     title: Schema.Attribute.String &
       Schema.Attribute.Required &
@@ -614,7 +614,7 @@ export interface ApiNoticiaNoticia extends Struct.CollectionTypeSchema {
         };
       }> &
       Schema.Attribute.SetMinMaxLength<{
-        maxLength: 80;
+        maxLength: 250;
       }>;
     title: Schema.Attribute.String &
       Schema.Attribute.Required &
