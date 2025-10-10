@@ -491,7 +491,9 @@ export interface ApiNewsEstudioCactusNewsEstudioCactus
           localized: true;
         };
       }>;
-    category: Schema.Attribute.Enumeration<['Awards', 'News']> &
+    category: Schema.Attribute.Enumeration<
+      ['Awards', 'News', 'Noticias', 'Premios']
+    > &
       Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
@@ -599,7 +601,9 @@ export interface ApiNoticiaNoticia extends Struct.CollectionTypeSchema {
           localized: true;
         };
       }>;
-    category: Schema.Attribute.Enumeration<['Awards', 'News']> &
+    category: Schema.Attribute.Enumeration<
+      ['Awards', 'News', 'Noticias', 'Premios']
+    > &
       Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
         i18n: {

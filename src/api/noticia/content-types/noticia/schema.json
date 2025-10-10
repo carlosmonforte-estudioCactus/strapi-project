@@ -78,7 +78,9 @@
       "required": true,
       "enum": [
         "Awards",
-        "News"
+        "News",
+        "Noticias",
+        "Premios"
       ]
     },
     "subTitle": {
