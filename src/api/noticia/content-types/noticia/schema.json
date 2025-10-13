@@ -112,6 +112,16 @@
       },
       "required": true,
       "default": false
+    },
+    "tabTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "maxLength": 50,
+      "required": true
     }
   }
 }

@@ -562,6 +562,16 @@ export interface ApiNewsEstudioCactusNewsEstudioCactus
       Schema.Attribute.SetMinMaxLength<{
         maxLength: 250;
       }>;
+    tabTitle: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }> &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 50;
+      }>;
     title: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
@@ -670,6 +680,16 @@ export interface ApiNoticiaNoticia extends Struct.CollectionTypeSchema {
       }> &
       Schema.Attribute.SetMinMaxLength<{
         maxLength: 250;
+      }>;
+    tabTitle: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }> &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 50;
       }>;
     title: Schema.Attribute.String &
       Schema.Attribute.Required &
