@@ -544,6 +544,13 @@ export interface ApiNewsEstudioCactusNewsEstudioCactus
       'api::news-estudio-cactus.news-estudio-cactus'
     >;
     publishedAt: Schema.Attribute.DateTime;
+    seoURL: Schema.Attribute.UID &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     showInHomePage: Schema.Attribute.Boolean &
       Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
@@ -664,6 +671,13 @@ export interface ApiNoticiaNoticia extends Struct.CollectionTypeSchema {
       'api::noticia.noticia'
     >;
     publishedAt: Schema.Attribute.DateTime;
+    seoURL: Schema.Attribute.UID &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     showInHomePage: Schema.Attribute.Boolean &
       Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{

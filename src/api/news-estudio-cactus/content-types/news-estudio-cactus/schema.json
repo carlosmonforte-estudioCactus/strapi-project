@@ -123,6 +123,16 @@
       },
       "maxLength": 50,
       "required": true
+    },
+    "seoURL": {
+      "type": "uid",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true,
+      "regex": "^[a-zA-Z0-9-]+$"
     }
   }
 }
