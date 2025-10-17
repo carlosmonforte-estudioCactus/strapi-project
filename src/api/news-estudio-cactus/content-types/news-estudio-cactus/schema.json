@@ -101,7 +101,7 @@
           "localized": true
         }
       },
-      "maxLength": 350,
+      "maxLength": 250,
       "required": true
     },
     "featured": {

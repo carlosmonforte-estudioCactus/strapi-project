@@ -536,7 +536,7 @@ export interface ApiNewsEstudioCactusNewsEstudioCactus
         };
       }> &
       Schema.Attribute.SetMinMaxLength<{
-        maxLength: 350;
+        maxLength: 250;
       }>;
     locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<
@@ -663,7 +663,7 @@ export interface ApiNoticiaNoticia extends Struct.CollectionTypeSchema {
         };
       }> &
       Schema.Attribute.SetMinMaxLength<{
-        maxLength: 350;
+        maxLength: 250;
       }>;
     locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<
