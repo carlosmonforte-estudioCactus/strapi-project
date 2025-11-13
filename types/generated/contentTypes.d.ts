@@ -534,9 +534,6 @@ export interface ApiNewsEstudioCactusNewsEstudioCactus
         i18n: {
           localized: true;
         };
-      }> &
-      Schema.Attribute.SetMinMaxLength<{
-        maxLength: 250;
       }>;
     locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<
@@ -565,9 +562,6 @@ export interface ApiNewsEstudioCactusNewsEstudioCactus
         i18n: {
           localized: true;
         };
-      }> &
-      Schema.Attribute.SetMinMaxLength<{
-        maxLength: 250;
       }>;
     tabTitle: Schema.Attribute.String &
       Schema.Attribute.Required &
@@ -575,9 +569,6 @@ export interface ApiNewsEstudioCactusNewsEstudioCactus
         i18n: {
           localized: true;
         };
-      }> &
-      Schema.Attribute.SetMinMaxLength<{
-        maxLength: 50;
       }>;
     title: Schema.Attribute.String &
       Schema.Attribute.Required &
@@ -585,9 +576,6 @@ export interface ApiNewsEstudioCactusNewsEstudioCactus
         i18n: {
           localized: true;
         };
-      }> &
-      Schema.Attribute.SetMinMaxLength<{
-        maxLength: 60;
       }>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

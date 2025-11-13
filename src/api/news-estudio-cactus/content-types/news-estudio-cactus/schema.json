@@ -22,7 +22,6 @@
           "localized": true
         }
       },
-      "maxLength": 60,
       "required": true
     },
     "bodyContent": {
@@ -91,7 +90,6 @@
           "localized": true
         }
       },
-      "maxLength": 250,
       "required": true
     },
     "introductionTest": {
@@ -101,7 +99,6 @@
           "localized": true
         }
       },
-      "maxLength": 250,
       "required": true
     },
     "featured": {
@@ -121,7 +118,6 @@
           "localized": true
         }
       },
-      "maxLength": 50,
       "required": true
     },
     "seoURL": {
