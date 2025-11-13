@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "test_news",
+  "info": {
+    "singularName": "test-new",
+    "pluralName": "test-news",
+    "displayName": "test-news"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "seoURL": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "bodyContent": {
+      "type": "richtext"
+    }
+  }
+}

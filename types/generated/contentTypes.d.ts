@@ -721,6 +721,41 @@ export interface ApiNoticiaNoticia extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiTestNewTestNew extends Struct.CollectionTypeSchema {
+  collectionName: 'test_news';
+  info: {
+    displayName: 'test-news';
+    pluralName: 'test-news';
+    singularName: 'test-new';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    bodyContent: Schema.Attribute.RichText;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.String;
+    image: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::test-new.test-new'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    seoURL: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface PluginContentReleasesRelease
   extends Struct.CollectionTypeSchema {
   collectionName: 'strapi_releases';
@@ -1234,6 +1269,7 @@ declare module '@strapi/strapi' {
       'admin::user': AdminUser;
       'api::news-estudio-cactus.news-estudio-cactus': ApiNewsEstudioCactusNewsEstudioCactus;
       'api::noticia.noticia': ApiNoticiaNoticia;
+      'api::test-new.test-new': ApiTestNewTestNew;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;
