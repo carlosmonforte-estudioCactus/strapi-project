@@ -467,6 +467,40 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiCaseStudiesStowlogCaseStudiesStowlog
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'case_studies_stowlogs';
+  info: {
+    displayName: 'CaseStudiesStowlog';
+    pluralName: 'case-studies-stowlogs';
+    singularName: 'case-studies-stowlog';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    bodyContent: Schema.Attribute.RichText & Schema.Attribute.Required;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    date: Schema.Attribute.Date;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::case-studies-stowlog.case-studies-stowlog'
+    > &
+      Schema.Attribute.Private;
+    location: Schema.Attribute.String & Schema.Attribute.Required;
+    publishedAt: Schema.Attribute.DateTime;
+    seoURL: Schema.Attribute.UID & Schema.Attribute.Required;
+    subTtitle: Schema.Attribute.String & Schema.Attribute.Required;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiNewsEstudioCactusNewsEstudioCactus
   extends Struct.CollectionTypeSchema {
   collectionName: 'news_estudio_cacti';
@@ -1255,6 +1289,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::case-studies-stowlog.case-studies-stowlog': ApiCaseStudiesStowlogCaseStudiesStowlog;
       'api::news-estudio-cactus.news-estudio-cactus': ApiNewsEstudioCactusNewsEstudioCactus;
       'api::noticia.noticia': ApiNoticiaNoticia;
       'api::test-new.test-new': ApiTestNewTestNew;

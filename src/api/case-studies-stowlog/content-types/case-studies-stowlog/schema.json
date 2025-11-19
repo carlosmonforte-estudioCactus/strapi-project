@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "case_studies_stowlogs",
+  "info": {
+    "singularName": "case-studies-stowlog",
+    "pluralName": "case-studies-stowlogs",
+    "displayName": "CaseStudiesStowlog"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subTtitle": {
+      "type": "string",
+      "required": true
+    },
+    "bodyContent": {
+      "type": "richtext",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "seoURL": {
+      "type": "uid",
+      "required": true,
+      "regex": "^[a-z0-9-]+$"
+    },
+    "date": {
+      "type": "date"
+    }
+  }
+}
