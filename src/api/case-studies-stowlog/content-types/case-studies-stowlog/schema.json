@@ -15,7 +15,7 @@
       "type": "string",
       "required": true
     },
-    "subTtitle": {
+    "subTitle": {
       "type": "string",
       "required": true
     },

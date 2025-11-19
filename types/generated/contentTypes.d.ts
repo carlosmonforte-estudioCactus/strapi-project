@@ -494,7 +494,7 @@ export interface ApiCaseStudiesStowlogCaseStudiesStowlog
     location: Schema.Attribute.String & Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
     seoURL: Schema.Attribute.UID & Schema.Attribute.Required;
-    subTtitle: Schema.Attribute.String & Schema.Attribute.Required;
+    subTitle: Schema.Attribute.String & Schema.Attribute.Required;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
