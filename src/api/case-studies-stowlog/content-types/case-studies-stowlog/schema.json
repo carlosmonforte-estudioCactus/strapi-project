@@ -19,12 +19,16 @@
       "type": "string",
       "required": true
     },
-    "bodyContent": {
-      "type": "richtext",
+    "introductionText": {
+      "type": "string",
       "required": true
     },
     "location": {
       "type": "string",
+      "required": true
+    },
+    "bodyContent": {
+      "type": "richtext",
       "required": true
     },
     "seoURL": {
@@ -34,10 +38,6 @@
     },
     "date": {
       "type": "date"
-    },
-    "introductionText": {
-      "type": "string",
-      "required": true
     }
   }
 }
