@@ -19,6 +19,15 @@
       "type": "string",
       "required": true
     },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
     "introductionText": {
       "type": "string",
       "required": true
@@ -26,6 +35,14 @@
     "location": {
       "type": "string",
       "required": true
+    },
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "files",
+        "videos"
+      ]
     },
     "bodyContent": {
       "type": "richtext",
