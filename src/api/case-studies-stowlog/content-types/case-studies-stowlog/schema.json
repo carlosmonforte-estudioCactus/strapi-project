@@ -36,13 +36,8 @@
       "type": "string",
       "required": true
     },
-    "video": {
-      "type": "media",
-      "multiple": false,
-      "allowedTypes": [
-        "files",
-        "videos"
-      ]
+    "videoURL": {
+      "type": "string"
     },
     "bodyContent": {
       "type": "richtext",

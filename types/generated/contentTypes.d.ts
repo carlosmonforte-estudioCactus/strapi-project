@@ -501,7 +501,7 @@ export interface ApiCaseStudiesStowlogCaseStudiesStowlog
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    video: Schema.Attribute.Media<'files' | 'videos'>;
+    videoURL: Schema.Attribute.String;
   };
 }
 
