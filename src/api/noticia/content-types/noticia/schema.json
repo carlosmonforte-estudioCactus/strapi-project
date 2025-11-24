@@ -132,6 +132,14 @@
       },
       "required": true,
       "regex": "^[a-z0-9-]+$"
+    },
+    "videoURL": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
